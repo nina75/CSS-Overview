@@ -1,0 +1,49 @@
+body, div, table, thead, tbody, tr, th, td {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 18px;
+    font-family: Calibri, Arial;
+}
+
+#wrapper {
+    background-color: green;
+    width: 1215px;
+    height: 440px;
+    border: 1px solid black;
+}
+
+table {
+    margin: 20px;
+    width: 1170px;
+    border-collapse: collapse;
+}
+
+tr {
+    height: 65px;
+    border-bottom: 2px solid black;
+}
+
+th, td {
+    border-left: 2px solid black;
+}
+
+th:last-child, td:last-child {
+    /*border: none;*/
+}
+
+th {
+    background-color: #f8c711;
+    font-size: 1.6em;
+    font-weight: bold;
+}
+
+tbody tr:nth-child(2n+1) {
+    background-color: white;
+}
+
+tbody tr:nth-child(2n) {
+    background-color: #c8c8c8;
+}
