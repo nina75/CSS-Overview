@@ -57,12 +57,40 @@ aside ul li:first-child {
 }
 
 aside ul li:hover {
-    background-color: red;
     border-radius: 10px;
 }
 
+aside ul li:nth-child(1):hover {
+    background-color: red;
+}
+
+aside ul li:nth-child(2):hover {
+    background-color: #ffa500;
+}
+
+aside ul li:nth-child(3):hover {
+    background-color: #ffff00;
+}
+
+
+aside ul li:nth-child(4):hover {
+    background-color: #008000;
+}
+
+aside ul li:nth-child(5):hover {
+    background-color: #0000ff;
+}
+
+aside ul li:nth-child(6):hover {
+    background-color: #800080;
+}
+
+a:visited {
+    color: gray;
+}
+
 aside ul li:before {
-    content: url("../images/bullet.gif");
+    content: url("../images/bullet.png");
 }
 
 aside ul li a {

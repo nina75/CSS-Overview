@@ -4,8 +4,9 @@ body, div, table, thead, tbody, tr, th, td {
 }
 
 body {
-    font-size: 18px;
-    font-family: Calibri, Arial;
+    font-size: 20px;
+    letter-spacing: -1px;
+    font-family: Verdana, Calibri, Arial;
 }
 
 #wrapper {
@@ -18,26 +19,47 @@ body {
 table {
     margin: 20px;
     width: 1170px;
-    border-collapse: collapse;
+    border: 2px solid black;
+    border-spacing: 0;
+    border-radius: 20px;
 }
 
 tr {
     height: 65px;
-    border-bottom: 2px solid black;
 }
 
 th, td {
     border-left: 2px solid black;
+    border-bottom: 2px solid black;
 }
 
-th:last-child, td:last-child {
-    /*border: none;*/
+th:first-child, td:first-child {
+    border-left: 0;
+}
+
+tbody tr:last-child td{
+    border-bottom: 0;
+}
+
+th:first-child {
+    border-top-left-radius: 20px;
+}
+
+th:last-child {
+    border-top-right-radius: 20px;
+}
+
+tbody tr:last-child td:first-child{
+    border-bottom-left-radius: 20px;
+}
+
+tbody tr:last-child td:last-child{
+    border-bottom-right-radius: 20px;
 }
 
 th {
     background-color: #f8c711;
-    font-size: 1.6em;
-    font-weight: bold;
+    font-size: 1.8rem;
 }
 
 tbody tr:nth-child(2n+1) {
@@ -46,4 +68,70 @@ tbody tr:nth-child(2n+1) {
 
 tbody tr:nth-child(2n) {
     background-color: #c8c8c8;
+}
+
+.country {
+    width: 200px;
+    padding-right: 10px;
+}
+
+.result {
+    width: 120px;
+}
+
+td {
+    padding: 0 10px;
+}
+
+th:nth-child(1), td:nth-child(1), td:nth-child(5) {
+    text-align: right;
+}
+
+td:nth-child(2), td:nth-child(4), td:nth-child(6) {
+    text-align: center;
+}
+
+input[type=number] {
+    width: 40px;
+    height: 40px;
+    color: red;
+    border: 1px solid #a9a9a9;
+    font-size: 20px;
+    background-color: #dcdcdc;
+    box-shadow: none;
+    padding-left: 5px;
+}
+
+input[type=submit] {
+    cursor:pointer;
+    border:none;
+    width: 45px;
+    height: 45px;
+}
+
+input.red {
+    background:url(../images/red_bet.png) no-repeat;
+}
+
+input.green {
+    background:url(../images/green_bet.png) no-repeat;
+}
+
+input.red:hover {
+    background:url(../images/red_bet_hover.png) no-repeat;
+}
+
+input.green:hover {
+    background:url(../images/green_bet_hover.png) no-repeat;
+}
+
+.brazil, .mexico, .spain, .netherlands, .italy,
+.england, .argentina, .bosna, .germany, .portugal {
+    display: inline-block;
+    width: 30px;
+    height: 20px;
+}
+
+.brazil {
+    background: url("../images/flag_bosna_herch.png");
 }
