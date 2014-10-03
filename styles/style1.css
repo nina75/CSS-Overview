@@ -24,6 +24,18 @@ table {
     border-radius: 20px;
 }
 
+.col-1, .col-3 {
+    width: 200px;
+}
+
+.col-2, .col-4 {
+    width: 115px;
+}
+
+.col-5, .col-7 {
+    width: 165px;
+}
+
 tr {
     height: 65px;
 }
@@ -71,12 +83,7 @@ tbody tr:nth-child(2n) {
 }
 
 .country {
-    width: 200px;
     padding-right: 10px;
-}
-
-.result {
-    width: 120px;
 }
 
 td {
@@ -117,6 +124,11 @@ input.green {
     background:url(../images/green_bet.png) no-repeat;
 }
 
+input.available {
+    color: green;
+    background-color: white;
+}
+
 input.red:hover {
     background:url(../images/red_bet_hover.png) no-repeat;
 }
@@ -130,8 +142,46 @@ input.green:hover {
     display: inline-block;
     width: 30px;
     height: 20px;
+    position: relative;
+    top: 5px;
 }
 
 .brazil {
+    background: url("../images/flag_brazil.png");
+}
+
+.mexico {
+    background: url("../images/flag_mexico.png");
+}
+
+.spain {
+    background: url("../images/flag_spain.png");
+}
+
+.netherlands {
+    background: url("../images/flag_netherland.png");
+}
+
+.italy {
+    background: url("../images/flag_italy.png");
+}
+
+.england {
+    background: url("../images/flag_england.png");
+}
+
+.argentina {
+    background: url("../images/flag_argentina.png");
+}
+
+.bosna {
     background: url("../images/flag_bosna_herch.png");
+}
+
+.germany {
+    background: url("../images/flag_germany.png");
+}
+
+.portugal {
+    background: url("../images/flag_portugal.png");
 }
